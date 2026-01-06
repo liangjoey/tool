@@ -109,7 +109,7 @@ hs.hotkey.bind({"shift","cmd"}, "m", function()
 end)
 
 -- Notion：開啟或切到前景
-hs.hotkey.bind({"shift","cmd"}, "n", function()
+hs.hotkey.bind({"shift","cmd","alt"}, "n", function()
   hs.application.launchOrFocus("Notion")
 end)
 
