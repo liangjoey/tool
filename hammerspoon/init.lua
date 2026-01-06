@@ -112,3 +112,8 @@ end)
 hs.hotkey.bind({"shift","cmd"}, "n", function()
   hs.application.launchOrFocus("Notion")
 end)
+
+-- Line：開啟或切到前景
+hs.hotkey.bind({"alt","cmd"}, "l", function()
+  hs.application.launchOrFocus("LINE")
+end)
