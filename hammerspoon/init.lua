@@ -114,6 +114,6 @@ hs.hotkey.bind({"shift","cmd","alt"}, "n", function()
 end)
 
 -- Line：開啟或切到前景
-hs.hotkey.bind({"alt","cmd"}, "l", function()
+hs.hotkey.bind({"alt","cmd,"alt"}, "l", function()
   hs.application.launchOrFocus("LINE")
 end)
