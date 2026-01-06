@@ -46,6 +46,7 @@ local function focusChromeOrTab(urlPart)
   focusChromeTabByURL(urlPart)
 end
 
+
 -- =========================
 -- Hotkeys
 -- =========================
@@ -62,7 +63,7 @@ hs.hotkey.bind({"shift","cmd"}, "y", function()
 end)
 
 hs.hotkey.bind({"shift","cmd"}, "o", function()
-  focusChromeOrTab("http://8.8.8.8") -- 你的 Outline URL
+  focusChromeOrTab("http://100.64.0.31:3000/doc/joe") -- 你的 Outline
 end)
 
 hs.hotkey.bind({"shift","cmd"}, "j", function()
@@ -77,9 +78,8 @@ end)
 
 hs.hotkey.bind({"shift","cmd"}, "a", function()
   focusChromeOrTab("sg.larksuite.com") 
-  -- 例如：focusChromeOrTab("https://sg.larksuite.com/base/")
+  -- 例如：focusChromeOrTab("https://m5c1w79u7ho.sg.larksuite.com/base/DMGPbsyU4azQpmsUFgcl8UKHgnh?table=tblbJLbc7ioORThL&view=vew5lDadEp")
 end)
--- template
 
 
 
@@ -106,4 +106,9 @@ end)
 -- Monitask：開啟或切到前景
 hs.hotkey.bind({"shift","cmd"}, "m", function()
   hs.application.launchOrFocus("Monitask")
+end)
+
+-- Notion：開啟或切到前景
+hs.hotkey.bind({"shift","cmd"}, "n", function()
+  hs.application.launchOrFocus("Notion")
 end)
