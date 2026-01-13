@@ -14,6 +14,7 @@ local function focusChromeTabByURL(urlPart)
         repeat with t in tabs of w
           if (URL of t) contains "%s" then
             set active tab index of w to ti
+            
             set index of w to 1
             activate
             return "OK"
@@ -116,4 +117,14 @@ end)
 -- Line：開啟或切到前景
 hs.hotkey.bind({"shift","cmd","alt"}, "l", function()
   hs.application.launchOrFocus("LINE")
+end)
+
+-- 備忘錄：開啟或切到前景
+hs.hotkey.bind({"shift","cmd"}, "1", function()
+  hs.application.launchOrFocus("Notes")
+end)
+
+-- 便利貼：開啟或切到前景
+hs.hotkey.bind({"shift","cmd"}, "2", function()
+  hs.application.launchOrFocus("Stickies")
 end)
